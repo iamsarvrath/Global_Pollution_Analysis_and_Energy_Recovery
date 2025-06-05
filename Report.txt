@@ -1,0 +1,49 @@
+
+Global Pollution Analysis and Energy Recovery — Report
+
+Objective
+---------
+This project analyzes global pollution data to assess its impact on energy recovery. Two models were implemented:
+- Linear Regression: to predict energy recovery based on pollution metrics.
+- Logistic Regression: to classify pollution severity levels (Low, Medium, High).
+
+
+Model Evaluation Summary
+-------------------------
+
+Linear Regression – Predicting Energy Recovery
+- R² Score: -0.025  
+- Mean Squared Error (MSE): 24,792.81  
+- Mean Absolute Error (MAE): 142.11
+
+Insight: The negative R² indicates poor predictive performance, suggesting a non-linear or more complex relationship between pollution metrics and energy recovery.
+
+
+Logistic Regression – Classifying Pollution Severity
+- Accuracy: 97.5%
+- Classification Report:
+    - High: Precision 0.91, Recall 1.00  
+    - Low: Precision 1.00, Recall 1.00  
+    - Medium: Precision 1.00, Recall 0.96
+
+Insight: The classifier performs excellently, especially in distinguishing between Low, Medium, and High pollution levels.
+
+
+Key Findings
+------------
+- High pollution indicators often correspond with lower energy recovery.
+- Countries with poor recovery and high pollution levels may be underutilizing waste-to-energy opportunities.
+- Logistic classification is effective for identifying pollution severity, which could aid in policy targeting.
+
+
+Actionable Recommendations
+--------------------------
+1. Improve Waste-to-Energy Systems: Invest in recovery infrastructure in high-pollution, low-recovery regions.
+2. Strengthen Emission Controls: Enforce regulations on CO₂ emissions and industrial waste.
+3. Public Awareness and International Aid: Support cleaner practices and provide aid to developing nations with critical pollution levels.
+4. Advanced Modeling: Explore non-linear models (e.g., Random Forests, XGBoost) for better energy recovery prediction.
+
+
+Conclusion
+----------
+This analysis highlights the challenges in predicting energy recovery from linear pollution metrics, while also demonstrating the success of logistic models in categorizing pollution severity. These insights can guide environmental policy and targeted interventions globally.
