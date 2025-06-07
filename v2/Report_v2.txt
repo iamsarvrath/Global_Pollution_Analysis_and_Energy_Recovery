@@ -1,0 +1,36 @@
+
+Global Pollution Analysis and Energy Recovery - Summary Report
+
+Objective:
+Analyze global pollution data, apply classification models (Naive Bayes, KNN, Decision Tree), evaluate performance, and provide actionable insights.
+
+Data Preprocessing:
+- Handled missing values with median imputation.
+- Label encoded categorical features.
+- Standardized data using StandardScaler.
+
+Model Evaluation:
+1. Naive Bayes
+   - Accuracy: 0.61
+   - Simple, but assumes feature independence.
+2. K-Nearest Neighbors (KNN)
+   - Accuracy: 0.73
+   - Improved performance with scaling.
+3. Decision Tree
+   - Accuracy: 0.78
+   - Best performer; interpretable and accurate.
+
+Key Findings:
+- Strong correlation between renewable energy and pollution control.
+- Decision Tree outperformed others.
+- Naive Bayes struggled due to data assumptions.
+
+Recommendations:
+- Promote renewable energy use.
+- Enhance data quality.
+- Prefer Decision Trees for deployment.
+- Always scale data for KNN-like models.
+
+Files:
+- Dataset: Global_Pollution_Analysis.csv
+- Notebook: Contains preprocessing, models, and evaluations.
