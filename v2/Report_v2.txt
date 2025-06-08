@@ -1,36 +1,32 @@
-
 Global Pollution Analysis and Energy Recovery - Summary Report
 
-Objective:
-Analyze global pollution data, apply classification models (Naive Bayes, KNN, Decision Tree), evaluate performance, and provide actionable insights.
+🔍 Key Findings:
+Three machine learning models were implemented to classify pollution impact levels: Naive Bayes, K-Nearest Neighbors (KNN), and Decision Tree. The models were trained and tested using environmental features from the dataset. Each model's performance varied significantly across categories and evaluation metrics, highlighting the strengths and weaknesses of different classification approaches.
 
-Data Preprocessing:
-- Handled missing values with median imputation.
-- Label encoded categorical features.
-- Standardized data using StandardScaler.
+📈 Model Results:
+# Naive Bayes achieved the highest accuracy of 80%, with strong performance particularly on the 'Medium' class (F1-score = 0.85) and overall good precision.
+- Accuracy: 80%
+- F1-Score (Macro Avg): 0.73
+- Precision: High = 1.00, Low = 1.00, Medium = 0.74
+- Recall: High = 0.43, Low = 0.60, Medium = 1.00
 
-Model Evaluation:
-1. Naive Bayes
-   - Accuracy: 0.61
-   - Simple, but assumes feature independence.
-2. K-Nearest Neighbors (KNN)
-   - Accuracy: 0.73
-   - Improved performance with scaling.
-3. Decision Tree
-   - Accuracy: 0.78
-   - Best performer; interpretable and accurate.
+# KNN had the lowest performance, with an accuracy of 47% and weak classification of 'High' and 'Low' classes.
+- Accuracy: 47%
+- F1-Score (Macro Avg): 0.38
+- Precision: High = 0.29, Low = 0.40, Medium = 0.54
+- Recall: High = 0.29, Low = 0.20, Medium = 0.65
 
-Key Findings:
-- Strong correlation between renewable energy and pollution control.
-- Decision Tree outperformed others.
-- Naive Bayes struggled due to data assumptions.
+# Decision Tree showed moderate results, with an accuracy of 55% and relatively balanced precision and recall across all classes.
+- Accuracy: 55%
+- F1-Score (Macro Avg): 0.52
+- Precision: High = 0.44, Low = 0.50, Medium = 0.61
+- Recall: High = 0.57, Low = 0.40, Medium = 0.61
 
-Recommendations:
-- Promote renewable energy use.
-- Enhance data quality.
-- Prefer Decision Trees for deployment.
-- Always scale data for KNN-like models.
+💡 Insights:
+Naive Bayes demonstrated a strong ability to detect the 'Medium' class with perfect recall but underperformed slightly in detecting 'High' impact levels. KNN failed to effectively classify the 'High' and 'Low' categories, which suggests it may not be suitable for this type of dataset. The Decision Tree model handled class distributions more evenly but still lagged behind in overall accuracy and reliability.
 
-Files:
-- Dataset: Global_Pollution_Analysis.csv
-- Notebook: Contains preprocessing, models, and evaluations.
+✅ Recommendations:
+Given the comparative results, Naive Bayes is the most effective classifier for this dataset. It is recommended for future implementations when classifying pollution levels due to its higher accuracy and consistent performance. Further tuning could improve recall for underrepresented classes like 'High'.
+
+📌 Summary:
+In conclusion, among all models tested, Naive Bayes emerged as the most robust model with 80% accuracy and superior F1-scores for the majority class. KNN proved unreliable, while the Decision Tree provided average results. For reliable classification of pollution categories and consistent model performance, Naive Bayes is recommended.
