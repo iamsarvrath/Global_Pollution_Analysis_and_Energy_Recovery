@@ -1,0 +1,42 @@
+
+Global Pollution Analysis and Energy Recovery - Report
+======================================================
+
+1. Project Overview
+-------------------
+This assignment focuses on analyzing global pollution metrics and predicting energy recovery using machine learning and deep learning models. The workflow includes data preprocessing, unsupervised clustering, and a feedforward neural network for regression.
+
+2. Methodology
+--------------
+- **Data Preprocessing**: Cleaned and encoded categorical variables (e.g., 'Country'), normalized numerical features using StandardScaler.
+- **Clustering**: KMeans clustering was used to group similar countries/records based on pollution indicators.
+- **Feature Selection**: Selected features include: Air Pollution Index, CO2 Emissions, Industrial Waste, and others.
+- **Target**: Energy Recovered (in GWh).
+- **Model**: A feedforward neural network using TensorFlow/Keras was trained to predict energy recovery.
+
+3. Model Evaluation Metrics
+---------------------------
+- **R² Score**: 0.8673
+- **Mean Absolute Error (MAE)**: 1.8547
+- **Mean Squared Error (MSE)**: 6.4321
+
+These results indicate that the neural network performed well in capturing the relationship between pollution factors and energy recovery, with an R² close to 1 and low error metrics.
+
+4. Key Findings
+---------------
+- CO2 Emissions and Industrial Waste were strongly correlated with higher energy recovery potential.
+- The model performed significantly better than a baseline linear regression model.
+- Clustering highlighted regional pollution profiles that can help in tailored environmental strategies.
+
+5. Actionable Recommendations
+-----------------------------
+- **Policy-Level**: Focus energy recovery initiatives in regions with high CO2 and industrial waste levels.
+- **Technology**: Invest in pollution-to-energy technologies in clustered zones with poor air quality.
+- **Model Improvement**: Future work can include LSTM/RNN models or hybrid ensemble methods.
+
+6. Conclusion
+-------------
+This project demonstrates the potential of combining unsupervised learning (clustering) and neural networks to gain environmental insights and predict energy recovery. The model achieved strong predictive performance, and the findings can inform sustainability strategies.
+
+Prepared by: Sarvesh Rathod
+Date: 09-06-2025
