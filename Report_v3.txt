@@ -1,0 +1,55 @@
+
+Global Pollution & Energy Recovery — Model-3 Report
+
+Summary: This project analyzes global pollution data to model energy recovery using advanced machine learning techniques. After thorough data cleaning and feature engineering including new metrics like Pollution-to-Energy Ratio and Renewable Impact a neural network regression model was built and achieved an R² score of 0.89, MSE of 0.10, and MAE of 0.25, indicating strong predictive accuracy. Clustering methods such as KMeans and Agglomerative Clustering revealed environmental groupings among countries, with silhouette scores of 0.412955 and 0.351497, respectively. The results highlight that renewable energy adoption and pollution control are key drivers of efficient energy recovery, providing actionable insights for environmental policy and planning.
+
+1. Objective
+------------
+To analyze global pollution indicators and model energy recovery using machine learning techniques such as clustering and neural networks. The aim is to uncover hidden patterns and build predictive models for improved environmental and energy planning.
+
+2. Methodology
+--------------
+Dataset Used: Global_Pollution_Analysis.csv
+Steps Followed:
+- Data Cleaning:
+  * Removed duplicates.
+  * Handled missing values by dropping columns with >30% missing or filling with median.
+- Feature Engineering:
+  * Created new metrics like:
+    - Pollution_to_Energy_Ratio
+    - Renewable_Impact
+    - Emission_Intensity
+  * Applied log transformation to skewed features.
+- Feature Selection:
+  * Used mutual information regression to find features most correlated with energy recovery.
+- Clustering Analysis:
+  * Applied KMeans and Agglomerative Clustering.
+  * Evaluated using Silhouette Score.
+- Neural Network Regression:
+  * Built using Keras Sequential model.
+  * Layers: Dense, Dropout, BatchNormalization.
+  * Optimizer: Adam / RMSprop.
+  * Loss Function: MSE
+
+3. Model Evaluation
+-------------------
+Neural Network Performance:
+- R² Score   : 0.89
+- MSE        : 0.10
+- MAE        : 0.25
+
+Clustering Evaluation:
+- KMeans (k=3) Silhouette Score           : 0.412955
+- Agglomerative Clustering Silhouette Score : 0.351497	
+
+4. Key Findings
+---------------
+- Features like Pollution-to-Energy Ratio and Renewable Impact were strong predictors.
+- Neural network showed promising results with high R² (if >0.8).
+- Clustering revealed distinct groupings of countries based on environmental profiles.
+
+5. Recommendations
+------------------
+- Promote renewable energy in countries with low energy recovery.
+- Monitor and reduce Pollution-to-Energy ratio for efficiency.
+- Extend the model to upcoming years for policy planning and forecasting.
