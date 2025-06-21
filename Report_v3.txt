@@ -1,7 +1,10 @@
-
 Global Pollution & Energy Recovery — Model-3 Report
 
-Summary: This project analyzes global pollution data to model energy recovery using advanced machine learning techniques. After thorough data cleaning and feature engineering including new metrics like Pollution-to-Energy Ratio and Renewable Impact a neural network regression model was built and achieved an R² score of 0.89, MSE of 0.10, and MAE of 0.25, indicating strong predictive accuracy. Clustering methods such as KMeans and Agglomerative Clustering revealed environmental groupings among countries, with silhouette scores of 0.412955 and 0.351497, respectively. The results highlight that renewable energy adoption and pollution control are key drivers of efficient energy recovery, providing actionable insights for environmental policy and planning.
+Summary: This project analyzes global pollution data to model energy recovery using advanced machine learning techniques. After thorough data cleaning and 
+feature engineering including new metrics like Pollution-to-Energy Ratio and Renewable Impact a neural network regression model was built and achieved an R² 
+score of 0.89, MSE of 0.10, and MAE of 0.25, indicating strong predictive accuracy. Clustering methods such as KMeans and Agglomerative Clustering revealed 
+environmental groupings among countries, with silhouette scores of 0.412955 and 0.351497, respectively. The results highlight that renewable energy adoption 
+and pollution control are key drivers of efficient energy recovery, providing actionable insights for environmental policy and planning.
 
 1. Objective
 ------------
